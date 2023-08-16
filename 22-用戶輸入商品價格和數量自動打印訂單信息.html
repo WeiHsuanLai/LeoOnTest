@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    h2{
+                              text-align: center;
+                    }
+                    table{
+                              text-align: center;
+                              margin-left: auto;
+                              margin-right:auto;
+                              border-collapse:collapse;
+                    }
+          </style>
+</head>
+<body>
+          <script>  
+          // let num1 = prompt('請輸入第一個數: ')
+          // let num2 = prompt('請輸入第二個數: ')
+          // let num3 = Number(num1)+Number(num2)
+          // alert(num3)
+          let num1 = +prompt('商品價格: ')
+          let num2 = +prompt('數量: ')
+          let num3 = prompt('收貨地址: ')
+          let num4 = num1*num2
+          document.write(`
+                    <h2>訂單確認</h2>
+                    <table border="1">
+                              <tr>
+                                        <th>商品名稱</th>
+                                        <th>商品價格</th>
+                                        <th>商品數量</th>
+                                        <th>總價</th>
+                                        <th>收穫地址</th>
+                              </tr>
+                              <tr>
+                                        <td>HTC手機</td>
+                                        <td>${num1}元</td>
+                                        <td>${num2}</td>
+                                        <td>${num4}</td>
+                                        <td>${num3}</td>
+                              </tr>
+          </table>
+          `)
+          </script>
+          
+</body>
+
+</html>

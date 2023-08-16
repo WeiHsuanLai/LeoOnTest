@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <script>
+                    //1.利用fot打印5顆*
+                    // for(let i=1;i<=5;i++){
+                    //           document.write('*')
+                    // }
+
+                    //2.請依序打印數組 ['關羽','張飛','趙雲','馬超','黃忠']
+                    let arr = ['關羽','張飛','趙雲','馬超','黃忠']
+                    // document.write(arr[0])
+                    for(let i=0;i < arr.length;i++){
+                              if(arr[i]==='張飛'){
+                                        document.write('曠課<br>')
+                                        continue
+                              }
+                              document.write(`${arr[i]}<br>`)
+                    }
+
+                    // for(;;){
+                    //           console.log(11)
+                    // }
+          </script>
+</body>
+</html>

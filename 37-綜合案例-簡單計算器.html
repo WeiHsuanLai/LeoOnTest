@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <script>
+                    //用入輸入兩個數字 然後輸入+-*任一個 可以計算結果
+                    let num1 = +prompt('第一個數字')
+                    let num2 = +prompt('第一個數字')
+                    let sp = prompt('輸入+或-或*')
+                    switch(sp){
+                              case '+' :
+                                        alert(num1+num2)
+                                        break
+                              case '-' :
+                                        alert(num1-num2)
+                                        break
+                              case '*' :
+                                        alert(num1*num2)
+                                        break
+                              default:
+                                        alert('請輸入+-*')
+                    }                   
+          </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <script>
+                    //題目: 判斷閏年還是平年
+                    //能被4整除 但不能被100整除 或是被400整除的年份為閏年 否則都是平年
+                    let year = prompt('年分 :')
+                    if(year %4 === 0 && year % 100 !== 0 || year %400 === 0){
+                              document.write('閏年')
+                    }else{
+                              document.write('平年')
+                    }
+
+          </script>
+</body>
+</html>

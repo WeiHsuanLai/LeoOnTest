@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <script>
+                    //題目: 用戶輸入 用戶名 Leo 密碼 123456 則提示登陸成功 否則登入失敗
+                    //分析: 彈出輸入框 分別為用戶明和密碼
+                    //通過if語句判斷 如果用戶正確 且 密碼為 123456 則執行if裡面的語句 否則執行 else裡面的語句
+                    let uname = prompt('帳號 :')
+                    let pwd = prompt('密碼 :')
+                    if(uname == 'Leo'&& pwd === '123456'){
+                              document.write('登入成功')
+                    }else{
+                              document.write('登入失敗')
+                    }
+
+          </script>
+</body>
+</html>

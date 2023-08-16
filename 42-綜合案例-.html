@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+</head>
+<body>
+          <script>
+                    //題目:用戶可選擇 存錢 取錢 查看餘額 和退出功能
+                    //循環的時候 需要提示反覆輸入框 所以 提示框寫道循環內
+                    //提前準備好一個金額先儲存一個數額
+                    //取錢則是減法操作 存錢則是加法操作 查看餘額則是直接顯示金額
+                    //輸入不同的值 可以使用switch來操作
+                    let money = 6666
+                    while(true)
+          {
+                    let str = prompt('1存錢2取錢3查看餘額4退出')
+                    switch(str){
+                              case '1' :
+                              let savemoney = +prompt('輸入存入金額')
+                              alert(`餘額為${money = money+savemoney}`)
+                                        break
+                              case '2' :
+                              let getmoney = +prompt('輸入提款金額')
+                              alert(`餘額為${money = money-getmoney}`)
+                                        break
+                              case '3' :
+                              alert(`餘額為${money}`)
+                                        break
+                    }                    
+                    if(str === '4'){
+                              break
+                    }
+          }
+          </script>
+</body>
+</html>
